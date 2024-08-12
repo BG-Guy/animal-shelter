@@ -1,0 +1,54 @@
+.container {
+  position: relative;
+  width: 100vw;
+  min-height: 200vh; /* Ensures scrollable area */
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.squaresContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+.staticDiv {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-top: 200px; /* Add some margin to ensure titles are initially visible */
+}
+
+.staticDiv h1 {
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+.extraContent {
+  position: relative;
+  margin-top: 500px; /* Ensure there's enough content to scroll */
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  place-items: center;
+}

@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .transition-elastic-out {
+    @apply transition-all duration-1000 ease-elastic-out delay-0;
+  }
+}
+
+@layer base {
+  :root {
+    --background: hsla(0, 0%, 99%, 1);
+    --foreground: hsla(0, 0%, 17%, 1);
+
+    --card: hsla(0, 0%, 91%, 1);
+    --card-foreground: hsla(0, 0%, 17%, 1);
+
+    --popover: hsla(0, 0%, 91%, 1);
+    --popover-foreground: hsla(0, 0%, 17%, 1);
+
+    --primary: hsla(221, 14%, 44%, 1);
+    --primary-foreground: hsla(0, 0%, 91%, 1);
+
+    --secondary: hsla(319, 61%, 60%, 1);
+    --secondary-foreground: hsla(300, 2%, 91%, 1);
+
+    --muted: hsla(300, 2%, 71%, 1);
+    --muted-foreground: hsla(300, 2%, 17%, 1);
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: hsla(353, 100%, 28%, 1);
+    --destructive-foreground: hsla(0, 0%, 17%, 1);
+
+    --border: hsla(300, 2%, 67%, 1);
+    --input: 214.3 31.8% 91.4%;
+    --ring: hsla(300, 2%, 91%, 1);
+
+    --radius: 0.5rem;
+    --elastic-out: linear(
+      0,
+      0.2178 2.1%,
+      1.1144 8.49%,
+      1.2959 10.7%,
+      1.3463 11.81%,
+      1.3705 12.94%,
+      1.3726,
+      1.3643 14.48%,
+      1.3151 16.2%,
+      1.0317 21.81%,
+      0.941 24.01%,
+      0.8912 25.91%,
+      0.8694 27.84%,
+      0.8698 29.21%,
+      0.8824 30.71%,
+      1.0122 38.33%,
+      1.0357,
+      1.046 42.71%,
+      1.0416 45.7%,
+      0.9961 53.26%,
+      0.9839 57.54%,
+      0.9853 60.71%,
+      1.0012 68.14%,
+      1.0056 72.24%,
+      0.9981 86.66%,
+      1
+    );
+
+    --navbar-height: 64px;
+  }
+
+  .dark {
+    --background: hsla(288, 96%, 13%, 1); /* Darker background */
+    --foreground: hsla(0, 0%, 90%, 1); /* Lighter text */
+
+    --card: hsla(0, 0%, 15%, 1); /* Darker cards */
+    --card-foreground: hsla(0, 0%, 90%, 1); /* Lighter card text */
+
+    --popover: hsla(0, 0%, 15%, 1); /* Darker popover */
+    --popover-foreground: hsla(0, 0%, 90%, 1); /* Lighter popover text */
+
+    --primary: hsla(221, 14%, 64%, 1); /* Adjusted primary for dark mode */
+    --primary-foreground: hsla(0, 0%, 10%, 1); /* Darker primary text */
+
+    --secondary: hsla(319, 81%, 50%, 1);
+    --secondary-foreground: hsla(300, 2%, 10%, 1); /* Darker secondary text */
+
+    --muted: hsla(300, 2%, 50%, 1); /* Adjusted muted for dark mode */
+    --muted-foreground: hsla(300, 2%, 80%, 1); /* Lighter muted text */
+
+    --accent: 210 40% 40%; /* Adjusted accent for dark mode */
+    --accent-foreground: 222.2 47.4% 90%; /* Lighter accent text */
+
+    --destructive: hsla(353, 100%, 48%, 1);
+    --destructive-foreground: hsla(0, 0%, 90%, 1);
+
+    --border: hsla(300, 2%, 40%, 1);
+    --input: 214.3 31.8% 30%;
+    --ring: hsla(300, 2%, 30%, 1);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.test-border {
+  border: 1px solid var(--foreground);
+  border-radius: 1vw;
+}
+
+.bottom-fade {
+  -webkit-box-shadow: 0px 114px 186px -72px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 114px 186px -72px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 63px 89px 27px rgba(0, 0, 0, 0.75);
+}

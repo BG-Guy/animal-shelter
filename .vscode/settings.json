@@ -1,0 +1,25 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#9fbbf5",
+    "activityBar.background": "#9fbbf5",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#ea3570",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#15202b99",
+    "sash.hoverBorder": "#9fbbf5",
+    "sideBar.border": "#9fbbf5",
+    "statusBar.background": "#719bf0",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#437aeb",
+    "statusBarItem.remoteBackground": "#719bf0",
+    "statusBarItem.remoteForeground": "#15202b",
+    "tab.activeBorder": "#9fbbf5",
+    "titleBar.activeBackground": "#719bf0",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#719bf099",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
+  "peacock.color": "#719bf0",
+  "turboConsoleLog.insertEmptyLineAfterLogMessage": true
+}

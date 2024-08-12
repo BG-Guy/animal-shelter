@@ -1,0 +1,64 @@
+// .contact-btn::before {
+//   content: "";
+//   height: 20px;
+//   width: 20px;
+//   transform: translate(-50%, -50%);
+//   top: 20px;
+//   left: 20px;
+//   position: absolute;
+//   border-radius: 50%;
+//   background: #2196f3;
+//   transition: all 0.5s;
+//   z-index: 2;
+// }
+
+// .contact-btn:hover {
+//   cursor: pointer;
+//   &::before {
+//     height: 300px;
+//     width: 300px;
+//   }
+// }
+
+// .contact-btn {
+//   overflow: hidden;
+// }
+
+// .contact-btn {
+//   overflow: hidden;
+
+//   position: absolute;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   transform: translate(-50%, -50%);
+//   left: 50%;
+//   top: 50%;
+//   z-index: 2;
+
+//   cursor: pointer;
+//   font-size: 50px;
+//   width: 200px;
+//   height: 100px;
+//   border: 1px solid black;
+//   border-radius: 100px;
+//   transition: all 0.5s;
+//   &:hover::before {
+//     height: 300px;
+//     width: 300px;
+//   }
+
+//   &::before {
+//     content: "";
+//     background: #2196f3;
+//     height: 20px;
+//     width: 20px;
+//     transform: translate(-50%, -50%);
+//     top: 20px;
+//     left: 20px;
+//     position: absolute;
+//     border-radius: 50%;
+//     transition: all 0.5s;
+//     z-index: 2;
+//   }
+// }
